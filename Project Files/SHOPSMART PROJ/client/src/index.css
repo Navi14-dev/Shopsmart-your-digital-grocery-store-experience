@@ -1,0 +1,98 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow-y: hidden; */
+}
+
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav a:hover {
+  transform: translateY(-2px) scale(1.03);
+}
+
+nav a:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 12px 16px;
+  }
+
+  .searchBox {
+    display: none;
+  }
+
+  nav a {
+    padding: 8px 10px;
+  }
+}
+/* Cart hover */
+a[title="Cart"]:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 12px 26px rgba(197, 34, 48, 0.6);
+}
+
+/* Avatar hover */
+div[title="Profile"]:hover {
+  transform: scale(1.08);
+}
+
+/* Dropdown items */
+.menuItem:hover {
+  background: linear-gradient(135deg, #088ee8, #0cf05c);
+  transform: translateX(6px);
+}
+
+.menuItem:active {
+  transform: scale(0.96);
+  background: linear-gradient(135deg, #0aa1f3, #06ef57);
+}
+
+/* Cursor polish */
+.menuItem,
+a,
+button {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .menuItem {
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes beachMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
